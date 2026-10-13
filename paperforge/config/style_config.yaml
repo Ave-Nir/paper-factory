@@ -1,0 +1,38 @@
+# 作者风格配置
+# 可选的风格偏好，用于调整输出论文的文风和格式
+
+style:
+  # 语言风格
+  language: "en"               # en / zh
+  
+  # 写作风格
+  voice: "active"              # active / passive / mixed
+  sentence_length: "medium"    # short / medium / long
+  paragraph_length: "medium"   # short / medium / long
+  
+  # 格式偏好
+  equation_numbering: "per_section"  # per_section / global / none
+  figure_position: "top"       # top / here / float
+  table_style: "booktabs"      # booktabs / ruled / plain
+  
+  # 引用风格
+  citation_command: "citep"    # citet / citep / cite
+  multiple_citation_separator: ", "
+  
+  # 术语偏好
+  use_abbreviations: true
+  abbreviation_list: true      # 是否生成缩略词表
+  
+  # 颜色
+  use_color: false
+  color_scheme: "default"
+
+
+# 输入文件默认候选列表
+# 当未指定输入文件时，按顺序查找以下文件
+input_candidates:
+  - "work/论文.docx"
+  - "test/论文.docx"
+  - "论文.docx"
+  - "test/实验报告.md"
+  - "实验报告.md"

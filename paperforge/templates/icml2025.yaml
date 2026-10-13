@@ -1,0 +1,43 @@
+# ICML 2025 模板配置
+
+name: "ICML 2025"
+year: 2025
+document_class: "article"
+class_options: []
+
+packages:
+  - name: "icml2025"
+  - name: "inputenc"
+    options: ["utf8"]
+  - name: "amsmath"
+  - name: "amssymb"
+  - name: "graphicx"
+  - name: "booktabs"
+  - name: "hyperref"
+  - name: "cleveref"
+  - name: "natbib"
+
+section_order:
+  - "introduction"
+  - "related_work"
+  - "method"
+  - "experiments"
+  - "conclusion"
+
+citation_style: "author-year"
+bibliography_style: "plainnat"
+page_limit: 8
+column_layout: "single"
+font_size: "10pt"
+figure_placement_default: "t"
+table_placement_default: "t"
+anonymous: true
+title_page_template: "icml2025/title_page.tex.j2"
+
+section_composers:
+  abstract: "AbstractComposer"
+  introduction: "IntroductionComposer"
+  related_work: "RelatedWorkComposer"
+  method: "MethodComposer"
+  experiments: "ExperimentsComposer"
+  conclusion: "ConclusionComposer"

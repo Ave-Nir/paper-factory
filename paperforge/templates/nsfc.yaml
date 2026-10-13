@@ -1,0 +1,47 @@
+# NSFC（国家自然科学基金）面上/地区/青年项目模板
+# 基于 ChineseResearchLaTeX 的 bensz-nsfc 模板包格式
+
+name: "NSFC"
+year: "2026"
+document_class: "article"
+class_options: ["12pt", "a4paper"]
+
+# 使用 XeLaTeX，字体/宏包在 assember._render_preamble 中自动注入
+packages:
+  - name: "amsmath"
+  - name: "amssymb"
+  - name: "graphicx"
+  - name: "booktabs"
+  - name: "geometry"
+
+section_order:
+  - "chinese_abstract"
+  - "related_work_cn"
+  - "research_content"
+  - "figures_tables_cn"
+  - "research_basis"
+  - "conclusion_cn"
+  - "references_cn"
+
+citation_style: "numeric"
+bibliography_style: "gbt7714-nsfc"   # GB/T 7714 中文国标
+page_limit: 20
+column_layout: "single"
+font_size: "12pt"
+figure_placement_default: "t"
+table_placement_default: "t"
+anonymous: false
+title_page_template: "nsfc/title_page.tex.j2"
+
+# XeLaTeX 引擎 + 中文
+engine: "xelatex"
+language: "chinese"
+
+section_composers:
+  chinese_abstract: "ChineseAbstractComposer"
+  related_work_cn: "ChineseRelatedWorkComposer"
+  research_content: "ChineseResearchContentComposer"
+  figures_tables_cn: "ChineseFiguresTablesComposer"
+  research_basis: "ChineseResearchBasisComposer"
+  conclusion_cn: "ChineseConclusionComposer"
+  references_cn: "ChineseReferencesComposer"

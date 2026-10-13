@@ -1,0 +1,22 @@
+# ============================================================
+# Paper Factory — 依赖清单
+#   pip install -r requirements.txt
+# ============================================================
+
+# --- 核心：文档解析 / 配置 ---
+pyyaml>=6.0
+python-docx>=1.1.0
+requests>=2.28.0
+
+# --- LLM 与生图调用 ---
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# --- paper_pipeline：数据模型 ---
+pydantic>=2.0
+
+# --- Gate5 PDF 校验（可选）---
+PyMuPDF>=1.24
+
+# --- 开发 / 测试 ---
+pytest>=8.0

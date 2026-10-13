@@ -1,0 +1,127 @@
+{
+  "schema_version": "paper_manifest.v1",
+  "paper_run_id": "bd6510c9-5cc5-483a-96fb-27343946211b",
+  "analysis_result_ref": {
+    "artifact_id": "",
+    "kind": "analysis_result",
+    "schema_version": "analysis_result.v2",
+    "run_id": "",
+    "relative_path": "input draft/output_770_final_v2/analysis_result.json",
+    "content_sha256": "8443c9021845a45a929c4653d885ba6c11d3b739c445a4fefeb2e3628f505954",
+    "status": "completed"
+  },
+  "analysis_audit_ref": null,
+  "reference_bundle_ref": null,
+  "prompt_assets": [],
+  "model_calls": [],
+  "sections": [
+    {
+      "section_id": "introduction",
+      "sha256": "9893232bdf6dd65e8081f194ee898204a50ba3e951dbf32f5d5e60486e3fa3c7",
+      "status": "completed",
+      "claim_count": 0,
+      "evidence_count": 0,
+      "md_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/introduction.md",
+      "json_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/introduction.json"
+    },
+    {
+      "section_id": "methods",
+      "sha256": "efd0e09b19132cb56e33c87bf58fa59f0c73b83b09357ebb013e1802de716b3e",
+      "status": "completed",
+      "claim_count": 0,
+      "evidence_count": 0,
+      "md_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/methods.md",
+      "json_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/methods.json"
+    },
+    {
+      "section_id": "results.3.1",
+      "sha256": "d12e1e027ee25777ed4631304cb46ea9bc7130220f2d2b3b943644e32a0f4774",
+      "status": "completed",
+      "claim_count": 0,
+      "evidence_count": 0,
+      "md_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/results.3.1.md",
+      "json_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/results.3.1.json"
+    },
+    {
+      "section_id": "results.3.2",
+      "sha256": "29ac1ed632098b2a24b0a310734b11cbe3c36ebfa95d54f5481a4df1766d086d",
+      "status": "completed",
+      "claim_count": 0,
+      "evidence_count": 0,
+      "md_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/results.3.2.md",
+      "json_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/results.3.2.json"
+    },
+    {
+      "section_id": "results.3.3",
+      "sha256": "ccf9829203e13c6097ddeac8bdb8e689e609e8e582685587677e9e543e609084",
+      "status": "completed",
+      "claim_count": 0,
+      "evidence_count": 0,
+      "md_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/results.3.3.md",
+      "json_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/results.3.3.json"
+    },
+    {
+      "section_id": "results.3.4",
+      "sha256": "445b7637014a31c285bb688f9b96dca1e7b1feea8cb8719ca639c2babb6a3b6d",
+      "status": "completed",
+      "claim_count": 0,
+      "evidence_count": 0,
+      "md_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/results.3.4.md",
+      "json_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/results.3.4.json"
+    },
+    {
+      "section_id": "results.3.5",
+      "sha256": "b574922a49ffbd30238e9d9eba06adc2e3a9f6425ae0d509cb1fbb6f468cbb15",
+      "status": "completed",
+      "claim_count": 0,
+      "evidence_count": 0,
+      "md_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/results.3.5.md",
+      "json_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/results.3.5.json"
+    },
+    {
+      "section_id": "discussion",
+      "sha256": "daa4c2325685fac79d25a7888fceaf5321e9178a0d24f10e966c381d7ae1f6a7",
+      "status": "completed",
+      "claim_count": 0,
+      "evidence_count": 0,
+      "md_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/discussion.md",
+      "json_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/discussion.json"
+    },
+    {
+      "section_id": "conclusion",
+      "sha256": "a71793a1107b2d2488f939d165da719150422de626af0ea50c784914111754b7",
+      "status": "completed",
+      "claim_count": 0,
+      "evidence_count": 0,
+      "md_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/conclusion.md",
+      "json_path": "06_data_knowledge/workspace/output_770_final_v2/zh/sections/conclusion.json"
+    }
+  ],
+  "claim_evidence_map": [],
+  "figure_request_refs": [],
+  "manuscript_source_ref": {
+    "artifact_id": "47f143c2-1e7b-47e1-b5a7-a62ef291c9f3",
+    "kind": "manuscript_source",
+    "schema_version": "manuscript_source.v1",
+    "run_id": "bd6510c9-5cc5-483a-96fb-27343946211b",
+    "relative_path": "06_data_knowledge/workspace/output_770_final_v2/zh/paper/manuscript_source.json",
+    "content_sha256": "b6e23ec93c6ad7e9ff65afd5f206616b24fab498bdd3cb706ec1afab2f3b3050",
+    "status": "completed"
+  },
+  "paper_content_sha256": "b6e23ec93c6ad7e9ff65afd5f206616b24fab498bdd3cb706ec1afab2f3b3050",
+  "created_at": "2026-07-20T06:29:08Z",
+  "status": "completed",
+  "artifact_id": "3b884d5c-0061-4a73-90d1-95798da8829f",
+  "run_id": "bd6510c9-5cc5-483a-96fb-27343946211b",
+  "producer": {
+    "service": "narrative",
+    "version": "1.0.0",
+    "code_revision": "unverified"
+  },
+  "lineage": {
+    "parent_refs": [],
+    "source_run_ids": []
+  },
+  "extensions": {},
+  "content_sha256": "c8eb879bbcc238acc43be41e08e725a180056fce4fd46853dcb0f41c2fb3eae4"
+}

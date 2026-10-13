@@ -1,0 +1,56 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- 虚拟环境 ----------
+.venv/
+venv/
+env/
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------- 密钥：绝不提交 ----------
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# ---------- 运行产物：绝不提交 ----------
+/workspace/
+/output/
+/runs/
+/diagrams/
+/build*/
+*.log
+logs/
+
+# ---------- LaTeX 中间文件 ----------
+*.aux
+*.toc
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini

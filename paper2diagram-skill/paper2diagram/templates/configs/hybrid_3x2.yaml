@@ -1,0 +1,8 @@
+arrow_style: orthogonal
+description: 顶部横向两段+底部纵向一段，适用于复杂机制分析
+font_family: Source Han Sans CN
+font_size_main: 10
+id: hybrid_3x2
+layout: hybrid
+name: 混合式3×2
+n_frames: 3

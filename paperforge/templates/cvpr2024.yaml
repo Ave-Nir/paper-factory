@@ -1,0 +1,39 @@
+# CVPR 2024 模板配置
+
+name: "CVPR 2024"
+year: 2024
+document_class: "cvpr"
+class_options: []
+
+packages:
+  - name: "graphicx"
+  - name: "amsmath"
+  - name: "amssymb"
+  - name: "booktabs"
+  - name: "hyperref"
+  - name: "cleveref"
+
+section_order:
+  - "introduction"
+  - "related_work"
+  - "method"
+  - "experiments"
+  - "conclusion"
+
+citation_style: "numeric"
+bibliography_style: "ieeetr"
+page_limit: 8
+column_layout: "single"
+font_size: "10pt"
+figure_placement_default: "t"
+table_placement_default: "t"
+anonymous: true
+title_page_template: "cvpr2024/title_page.tex.j2"
+
+section_composers:
+  abstract: "AbstractComposer"
+  introduction: "IntroductionComposer"
+  related_work: "RelatedWorkComposer"
+  method: "MethodComposer"
+  experiments: "ExperimentsComposer"
+  conclusion: "ConclusionComposer"

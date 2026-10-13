@@ -1,0 +1,8 @@
+arrow_style: orthogonal
+description: 上→中→下三个独立区域，适用于实验流程、方法论
+font_family: Source Han Sans CN
+font_size_main: 10
+id: vertical_3stage
+layout: vertical
+name: 纵向三段式
+n_frames: 3

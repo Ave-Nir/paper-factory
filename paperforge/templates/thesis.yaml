@@ -1,0 +1,49 @@
+# 学位论文模板（中文硕士/博士）
+# 使用统一中文模板：section key
+
+name: "Thesis CN"
+year: "2026"
+document_class: "report"
+class_options: ["12pt", "a4paper"]
+
+packages:
+  - name: "amsmath"
+  - name: "amssymb"
+  - name: "graphicx"
+  - name: "booktabs"
+  - name: "hyperref"
+
+section_order:
+  - "chinese_abstract"
+  - "english_abstract"
+  - "related_work_cn"
+  - "research_content"
+  - "research_basis"
+  - "figures_tables_cn"
+  - "conclusion_cn"
+  - "acknowledgement_cn"
+  - "references_cn"
+
+citation_style: "numeric"
+bibliography_style: "gbt7714-numerical"
+page_limit: 100
+column_layout: "single"
+font_size: "12pt"
+figure_placement_default: "t"
+table_placement_default: "t"
+anonymous: false
+title_page_template: "thesis/title_page.tex.j2"
+
+engine: "xelatex"
+language: "chinese"
+
+section_composers:
+  chinese_abstract: "ChineseAbstractComposer"
+  english_abstract: "EnglishAbstractComposer"
+  related_work_cn: "ChineseRelatedWorkComposer"
+  research_content: "ChineseResearchContentComposer"
+  research_basis: "ChineseResearchBasisComposer"
+  figures_tables_cn: "ChineseFiguresTablesComposer"
+  conclusion_cn: "ChineseConclusionComposer"
+  acknowledgement_cn: "ChineseAcknowledgementComposer"
+  references_cn: "ChineseReferencesComposer"

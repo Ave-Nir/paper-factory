@@ -1,0 +1,259 @@
+{
+  "logger": "paper_pipeline",
+  "entries": [
+    {
+      "timestamp": "2026-10-13T10:48:33.469179",
+      "level": "INFO",
+      "logger": "paper_pipeline",
+      "message": "Pipeline 启动",
+      "context": {
+        "paper": "..\\examples\\input\\sample_paper.md"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T10:48:33.473229",
+      "level": "INFO",
+      "logger": "paper_pipeline",
+      "message": "Gate检查: InputGate",
+      "context": {
+        "gate": "InputGate",
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T10:49:22.338527",
+      "level": "INFO",
+      "logger": "paper_pipeline",
+      "message": "Stage A 完成",
+      "context": {
+        "total": 4,
+        "success": 4
+      }
+    },
+    {
+      "timestamp": "2026-10-13T10:49:22.339658",
+      "level": "INFO",
+      "logger": "paper_pipeline",
+      "message": "Gate检查: DiagramGate",
+      "context": {
+        "gate": "DiagramGate",
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": [],
+        "total": 4,
+        "generated": 4,
+        "variants": [
+          "C03",
+          "C04",
+          "C01",
+          "C02"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-10-13T10:49:22.362722",
+      "level": "INFO",
+      "logger": "paper_pipeline",
+      "message": "Stage B 完成",
+      "context": {
+        "modified_paper": "..\\examples\\output\\论文_with_diagram.md"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T10:50:08.335570",
+      "level": "INFO",
+      "logger": "paper_pipeline",
+      "message": "Stage C 完成",
+      "context": {
+        "pdf": "..\\examples\\output\\build\\paper.pdf",
+        "pages": 21,
+        "elapsed_sec": 45.970746755599976
+      }
+    },
+    {
+      "timestamp": "2026-10-13T10:50:08.336557",
+      "level": "INFO",
+      "logger": "paper_pipeline",
+      "message": "Gate检查: TypesetGate",
+      "context": {
+        "gate": "TypesetGate",
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "errors": [],
+        "warnings": [],
+        "pdf": "..\\examples\\output\\build\\paper.pdf",
+        "pages": 21
+      }
+    },
+    {
+      "timestamp": "2026-10-13T10:50:09.217562",
+      "level": "ERROR",
+      "logger": "paper_pipeline",
+      "message": "Gate5 检测未通过",
+      "context": {
+        "errors": [
+          "[DUPLICATE_REF_HEADING] 检测到 2 个参考文献标题（应只有 1 个），位置: 第 18, 21 页",
+          "[LINE_SPACING_INCONSISTENT] 行距不一致: 检测到 [1.81, 2.76, 3.8, 2.8, 1.76, 2.4, 1.71, 1.21, 1.16] 种行距 (期望 1.5)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-10-13T10:50:09.217562",
+      "level": "ERROR",
+      "logger": "paper_pipeline",
+      "message": "Gate检查: PdfStrictGate",
+      "context": {
+        "gate": "PdfStrictGate",
+        "passed": false,
+        "error_count": 2,
+        "warning_count": 8,
+        "errors": [
+          "[DUPLICATE_REF_HEADING] 检测到 2 个参考文献标题（应只有 1 个），位置: 第 18, 21 页",
+          "[LINE_SPACING_INCONSISTENT] 行距不一致: 检测到 [1.81, 2.76, 3.8, 2.8, 1.76, 2.4, 1.71, 1.21, 1.16] 种行距 (期望 1.5)"
+        ],
+        "warnings": [
+          "[WARN_NO_ROMAN] 摘要/目录部分未使用罗马数字页码",
+          "检测到 2 页内容极少（可能为空白页）: 第 1, 21 页",
+          "参考文献标题存在但未检测到条目",
+          "检测到 2 个正文引用在参考文献中缺失: ['ref0', 'ref1']",
+          "检测到 47 个表格列对齐异常",
+          "中英文标点混用: 23 处",
+          "图表编号不连续，缺失: [6, 7, 8, 9, 10]",
+          "中英文之间缺少空格: 206 处"
+        ],
+        "issues": [
+          {
+            "error_code": "DUPLICATE_REF_HEADING",
+            "severity": "error",
+            "message": "检测到 2 个参考文献标题（应只有 1 个），位置: 第 18, 21 页",
+            "locations": [
+              {
+                "page": 18,
+                "text": "参考文献共被引网络将领域的知识基础提炼为三大理论支柱，分别为：以Breen"
+              },
+              {
+                "page": 21,
+                "text": "参考文献"
+              }
+            ],
+            "auto_fixable": true,
+            "fix_strategy": "删除多余的参考文献标题，保留模板自动生成的标题"
+          },
+          {
+            "error_code": "WARN_NO_ROMAN",
+            "severity": "warning",
+            "message": "摘要/目录部分未使用罗马数字页码",
+            "locations": [],
+            "auto_fixable": false,
+            "fix_strategy": ""
+          },
+          {
+            "error_code": "BLANK_PAGES",
+            "severity": "warning",
+            "message": "检测到 2 页内容极少（可能为空白页）: 第 1, 21 页",
+            "locations": [
+              {
+                "page": 1
+              },
+              {
+                "page": 21
+              }
+            ],
+            "auto_fixable": false,
+            "fix_strategy": ""
+          },
+          {
+            "error_code": "REF_ITEMS_MISSING",
+            "severity": "warning",
+            "message": "参考文献标题存在但未检测到条目",
+            "locations": [],
+            "auto_fixable": false,
+            "fix_strategy": ""
+          },
+          {
+            "error_code": "CITE_BIB_MISMATCH",
+            "severity": "warning",
+            "message": "检测到 2 个正文引用在参考文献中缺失: ['ref0', 'ref1']",
+            "locations": [],
+            "auto_fixable": false,
+            "fix_strategy": ""
+          },
+          {
+            "error_code": "IMAGE_INSERTED",
+            "severity": "info",
+            "message": "检测到 1 张图片，位于第 9 页",
+            "locations": [
+              {
+                "page": 9
+              }
+            ],
+            "auto_fixable": false,
+            "fix_strategy": ""
+          },
+          {
+            "error_code": "LINE_SPACING_INCONSISTENT",
+            "severity": "error",
+            "message": "行距不一致: 检测到 [1.81, 2.76, 3.8, 2.8, 1.76, 2.4, 1.71, 1.21, 1.16] 种行距 (期望 1.5)",
+            "locations": [],
+            "auto_fixable": true,
+            "fix_strategy": "统一 \\linespread{1.5}"
+          },
+          {
+            "error_code": "TABLE_ALIGN_INCORRECT",
+            "severity": "warning",
+            "message": "检测到 47 个表格列对齐异常",
+            "locations": [],
+            "auto_fixable": true,
+            "fix_strategy": "使用 booktabs 的 \\begin{tabular}{@{}r@{\\hspace{1em}}l@{}} 显式列对齐"
+          },
+          {
+            "error_code": "PUNCT_MIXED",
+            "severity": "warning",
+            "message": "中英文标点混用: 23 处",
+            "locations": [],
+            "auto_fixable": true,
+            "fix_strategy": "统一为全角中文标点或半角英文标点"
+          },
+          {
+            "error_code": "FIGURE_SEQ_MISSING",
+            "severity": "warning",
+            "message": "图表编号不连续，缺失: [6, 7, 8, 9, 10]",
+            "locations": [],
+            "auto_fixable": false,
+            "fix_strategy": ""
+          },
+          {
+            "error_code": "CN_EN_SPACE_MISSING",
+            "severity": "warning",
+            "message": "中英文之间缺少空格: 206 处",
+            "locations": [],
+            "auto_fixable": true,
+            "fix_strategy": "使用 xelatex 配合 \\xeCJKSetup 选项自动添加空格"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-10-13T10:50:09.218522",
+      "level": "INFO",
+      "logger": "paper_pipeline",
+      "message": "错误归因报告已生成",
+      "context": {
+        "path": "..\\examples\\output\\error_attribution.json"
+      }
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "errors": 2,
+    "warnings": 0,
+    "info": 8
+  }
+}

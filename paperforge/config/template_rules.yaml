@@ -1,0 +1,153 @@
+# 模板自动识别规则配置
+# 所有识别规则配置化，禁止代码中硬编码
+
+# 默认模板（当置信度不足时使用）
+default_template: "nsfc"
+
+# 语言检测阈值
+language_detection:
+  chinese_char_threshold: 0.3  # 中文字符占比 >= 30% 视为中文文档
+
+templates:
+  # ============================================================================
+  # 中文模板
+  # ============================================================================
+  - name: nsfc
+    language: zh
+    description: "国家自然科学基金申请书"
+    rules:
+      - type: title_keyword
+        patterns: ["国家自然科学基金", "NSFC", "基金申请", "资助项目"]
+        weight: 1.0
+      - type: abstract_keyword
+        patterns: ["研究内容", "关键科学问题", "研究方案"]
+        weight: 0.7
+
+  - name: sci
+    language: zh
+    description: "SCI 中文期刊"
+    rules:
+      - type: title_keyword
+        patterns: ["学报", "期刊", "研究"]
+        weight: 0.5
+      - type: citation_style
+        pattern: r"\[\d+\]"
+        weight: 0.3
+      - type: structure_marker
+        patterns: ["摘要", "关键词", "参考文献"]
+        weight: 0.4
+
+  - name: thesis
+    language: zh
+    description: "中文学位论文"
+    rules:
+      - type: title_keyword
+        patterns: ["学位论文", "博士学位论文", "硕士学位论文", "本科毕业论文"]
+        weight: 1.0
+      - type: structure_marker
+        patterns: ["第一章", "第二章", "致谢", "攻读学位期间发表论文"]
+        weight: 0.6
+
+  - name: renai
+    language: zh
+    description: "天津仁爱学院毕业论文"
+    rules:
+      - type: title_keyword
+        patterns: ["仁爱学院", "天津仁爱", "毕业设计", "毕业论文"]
+        weight: 1.0
+      - type: structure_marker
+        patterns: ["原创性声明", "版权使用授权书", "学术诚信承诺书", "开题报告", "致谢", "附录"]
+        weight: 0.7
+      - type: abstract_keyword
+        patterns: ["摘要", "ABSTRACT", "关键词", "Key words"]
+        weight: 0.4
+
+  - name: humanities
+    language: zh
+    description: "人文社科类论文"
+    rules:
+      - type: title_keyword
+        patterns: ["人文", "社科", "经济", "管理", "教育", "法律"]
+        weight: 0.6
+      - type: citation_style
+        pattern: r"\(\d{4}\)"
+        weight: 0.3
+
+  # ============================================================================
+  # 英文模板（按优先级排序，通用英文模板放在最后）
+  # ============================================================================
+  - name: ieee
+    language: en
+    description: "IEEE 会议/期刊论文"
+    priority: 100
+    rules:
+      - type: title_keyword
+        patterns: ["IEEE", "Proceedings", "Conference", "Transactions"]
+        weight: 0.9
+      - type: citation_style
+        pattern: r"\[\d+\]"
+        weight: 0.6
+      - type: abstract_keyword
+        patterns: ["Abstract", "Index Terms", "IEEE"]
+        weight: 0.5
+
+  - name: icml2025
+    language: en
+    description: "ICML 2025 会议论文"
+    priority: 100
+    rules:
+      - type: title_keyword
+        patterns: ["ICML", "International Conference on Machine Learning"]
+        weight: 1.0
+      - type: abstract_keyword
+        patterns: ["Abstract"]
+        weight: 0.3
+      - type: citation_style
+        pattern: r"\(.*,\s*\d{4}\)"
+        weight: 0.4
+
+  - name: cvpr2024
+    language: en
+    description: "CVPR 2024 会议论文"
+    priority: 100
+    rules:
+      - type: title_keyword
+        patterns: ["CVPR", "Computer Vision and Pattern Recognition"]
+        weight: 1.0
+
+  - name: neurips2024
+    language: en
+    description: "NeurIPS 2024 会议论文"
+    priority: 100
+    rules:
+      - type: title_keyword
+        patterns: ["NeurIPS", "Neural Information Processing Systems"]
+        weight: 1.0
+
+  - name: acl2024
+    language: en
+    description: "ACL 2024 会议论文"
+    priority: 100
+    rules:
+      - type: title_keyword
+        patterns: ["ACL", "Association for Computational Linguistics"]
+        weight: 1.0
+
+  # 通用英文模板（兜底，仅当其他英文模板都未匹配时使用）
+  - name: ieee
+    language: en
+    description: "通用英文论文（IEEE 格式）"
+    priority: 1
+    rules:
+      - type: language_marker
+        patterns: ["en"]
+        weight: 0.3
+
+# 识别策略
+strategy:
+  # 规则匹配得分合并方式: "max" 取最高分, "sum" 加权求和
+  score_merge: "max"
+  # 置信度阈值: >= threshold 时自动选择，否则提示用户确认
+  confidence_threshold: 0.7
+  # 多模板候选时，最多返回几个
+  max_candidates: 3

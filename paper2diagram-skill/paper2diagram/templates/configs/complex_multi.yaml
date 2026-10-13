@@ -1,0 +1,8 @@
+arrow_style: orthogonal
+description: 四阶段或更多的复杂流程，适用于系统架构图
+font_family: Source Han Sans CN
+font_size_main: 10
+id: complex_multi
+layout: horizontal
+name: 复杂多阶段
+n_frames: 4

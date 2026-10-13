@@ -1,0 +1,47 @@
+# ACL 2024 模板配置
+
+name: "ACL 2024"
+year: 2024
+document_class: "article"
+class_options: ["acl2024"]
+
+packages:
+  - name: "inputenc"
+    options: ["utf8"]
+  - name: "fontenc"
+    options: ["T1"]
+  - name: "amsmath"
+  - name: "amssymb"
+  - name: "graphicx"
+  - name: "booktabs"
+  - name: "hyperref"
+  - name: "cleveref"
+
+section_order:
+  - "introduction"
+  - "related_work"
+  - "method"
+  - "experiments"
+  - "conclusion"
+
+citation_style: "author-year"
+bibliography_style: "acl_natbib"
+page_limit: 8
+column_layout: "single"
+font_size: "11pt"
+figure_placement_default: "t"
+table_placement_default: "t"
+anonymous: true
+title_page_template: "acl2024/title_page.tex.j2"
+
+extra_preamble: |
+  \usepackage{natbib}
+  \usepackage{microtype}
+
+section_composers:
+  abstract: "AbstractComposer"
+  introduction: "IntroductionComposer"
+  related_work: "RelatedWorkComposer"
+  method: "MethodComposer"
+  experiments: "ExperimentsComposer"
+  conclusion: "ConclusionComposer"

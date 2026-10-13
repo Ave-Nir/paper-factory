@@ -1,0 +1,57 @@
+{
+  "schema_version": "reference_request.v1",
+  "artifact_id": "4e25de80-e801-4647-8a7c-9d411e30b48d",
+  "run_id": "bd6510c9-5cc5-483a-96fb-27343946211b",
+  "producer": {
+    "service": "narrative",
+    "version": "2.0.0",
+    "code_revision": "unverified"
+  },
+  "created_at": "2026-07-20T06:29:08Z",
+  "content_sha256": "393d4956cbba865be7aaf40e073dfda41ed4143ff3cf5e7e4c81b6d5d882789f",
+  "status": "completed",
+  "lineage": {
+    "parent_refs": [
+      {
+        "artifact_id": "47f143c2-1e7b-47e1-b5a7-a62ef291c9f3",
+        "kind": "manuscript_source",
+        "schema_version": "manuscript_source.v1"
+      }
+    ],
+    "source_run_ids": [
+      "bd6510c9-5cc5-483a-96fb-27343946211b"
+    ]
+  },
+  "extensions": {},
+  "reference_request_id": "4e25de80-e801-4647-8a7c-9d411e30b48d",
+  "requester": "narrative",
+  "requested_style_profile_ref": null,
+  "citation_contexts": [
+    {
+      "citation_key_hint": "Breen1997",
+      "author_surname": "Breen",
+      "year": "1997",
+      "source_role": "primary",
+      "context_note": "正文引用 Breen (1997)"
+    },
+    {
+      "citation_key_hint": "Boudon1974",
+      "author_surname": "Boudon",
+      "year": "1974",
+      "source_role": "primary",
+      "context_note": "正文引用 Boudon (1974)"
+    },
+    {
+      "citation_key_hint": "Lucas2001",
+      "author_surname": "Lucas",
+      "year": "2001",
+      "source_role": "primary",
+      "context_note": "正文引用 Lucas (2001)"
+    }
+  ],
+  "allowed_data_sources": [
+    "crossref",
+    "pubmed",
+    "openalex"
+  ]
+}

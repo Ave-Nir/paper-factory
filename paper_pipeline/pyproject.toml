@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-pipeline"
+version = "2.1.0"
+description = "论文工厂排版交付服务：生图(paper2diagram) → 插入 → 排版PDF(paperforge) → Gate5质量审计"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Ave-Nir", email = "ave-nir@users.noreply.github.com"},
+]
+keywords = ["bibliometrics", "typesetting", "latex", "pdf", "quality-gate"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Markup :: LaTeX",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+dependencies = [
+    "python-docx>=0.8",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+pdf = [
+    "PyMuPDF>=1.24",
+]
+test = [
+    "pytest>=8.0",
+]
+dev = [
+    "paper-pipeline[pdf,test]",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+paper-pipeline = "paper_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["paper_pipeline*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = ["-v", "--tb=short", "--strict-markers"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4", "SIM"]
+ignore = ["E501"]

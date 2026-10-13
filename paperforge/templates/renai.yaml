@@ -1,0 +1,79 @@
+# 天津仁爱学院毕业设计（论文）模板
+# 根据《毕设学生手册（2026届修订版）》制定
+
+name: "Renai College Thesis"
+year: "2026"
+document_class: "ctexrep"
+class_options: ["12pt", "a4paper"]
+
+packages:
+  - name: "amsmath"
+  - name: "amssymb"
+  - name: "graphicx"
+  - name: "booktabs"
+  - name: "tabularx"
+  - name: "hyperref"
+  - name: "geometry"
+  - name: "setspace"
+
+geometry:
+  top: 2.54cm
+  bottom: 2.54cm
+  left: 3.18cm
+  right: 3.18cm
+
+section_order:
+  - "chinese_abstract"
+  - "english_abstract"
+  - "contents"
+  - "main_body"
+  - "references_cn"
+  - "acknowledgement_cn"
+  - "appendix"
+  - "foreign_language"
+
+citation_style: "numeric"
+bibliography_style: "gbt7714-numerical"
+page_limit: 100
+column_layout: "single"
+font_size: "12pt"
+figure_placement_default: "t"
+table_placement_default: "t"
+anonymous: false
+title_page_template: "renai/title_page.tex.j2"
+
+engine: "xelatex"
+language: "chinese"
+
+section_composers:
+  chinese_abstract: "ChineseAbstractComposer"
+  english_abstract: "EnglishAbstractComposer"
+  contents: "ContentsComposer"
+  main_body: "ChineseMainBodyComposer"
+  references_cn: "ChineseReferencesComposer"
+  acknowledgement_cn: "ChineseAcknowledgementComposer"
+  appendix: "AppendixComposer"
+  foreign_language: "ForeignLanguageComposer"
+
+format_rules:
+  title_font: "黑体"
+  title_size: "22pt"
+  heading1_font: "黑体"
+  heading1_size: "15pt"
+  heading2_font: "黑体"
+  heading2_size: "14pt"
+  heading3_font: "黑体"
+  heading3_size: "14pt"
+  body_font: "宋体"
+  body_size: "12pt"
+  body_line_spacing: "21pt"
+  abstract_font: "宋体"
+  abstract_size: "12pt"
+  abstract_line_spacing: "21pt"
+  reference_font: "宋体"
+  reference_size: "10.5pt"
+  caption_font: "宋体"
+  caption_size: "10.5pt"
+  table_caption_position: "top"
+  figure_caption_position: "bottom"
+  toc_depth: 2

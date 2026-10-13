@@ -1,0 +1,109 @@
+You are an expert scientific figure designer for top-tier CS/scientific research papers. Generate a publication-quality framework architecture diagram.
+
+## CANVAS
+- Output: clean PNG diagram, 16:9 landscape orientation
+- Style: two-column layout: training lane on top / left, inference lane on bottom / right, shared backbone in center
+- Color palette: 夏日海滩: #F97F5F, #FAA26F, #3C9BC9, #FC757B
+
+## PAPER CONTEXT
+## Paper Title: 教育分层与不平等研究文献计量分析技术流程图
+
+## Methodology Stages
+1. 数据检索与筛选: 从Web of Science核心合集检索文献并依据PRISMA流程进行筛选
+2. 数据预处理与标准化: 对文献元数据进行清洗和标准化处理
+3. 文献计量分析: 综合运用描述性统计、网络分析和建模分析
+4. 结果与可视化: 呈现文献计量分析的主要发现
+
+## Module Connections
+- mod1 → mod2 (sequential)
+- mod2 → mod3 (sequential)
+- mod3 → mod4 (sequential)
+- mod3 → mod5 (sequential)
+- mod3 → mod6 (sequential)
+- mod4 → mod7 (sequential)
+- mod5 → mod7 (sequential)
+- mod6 → mod7 (sequential)
+- mod7 → mod8 (sequential)
+- mod7 → mod9 (sequential)
+- mod7 → mod10 (sequential)
+- mod7 → mod11 (sequential)
+- mod7 → mod12 (sequential)
+- mod7 → mod13 (sequential)
+- mod7 → mod14 (sequential)
+- mod7 → mod15 (sequential)
+- mod8 → mod16 (sequential)
+- mod12 → mod16 (sequential)
+- mod9 → mod17 (sequential)
+- mod10 → mod18 (sequential)
+- mod15 → mod18 (sequential)
+- mod11 → mod19 (sequential)
+- mod13 → mod20 (sequential)
+- mod14 → mod20 (sequential)
+- mod15 → mod20 (sequential)
+
+
+## CORE MODULES (each must appear as a distinct box or labeled region)
+
+
+## DATA / INFORMATION FLOW
+- mod1 → mod2 (sequential)
+- mod2 → mod3 (sequential)
+- mod3 → mod4 (sequential)
+- mod3 → mod5 (sequential)
+- mod3 → mod6 (sequential)
+- mod4 → mod7 (sequential)
+- mod5 → mod7 (sequential)
+- mod6 → mod7 (sequential)
+- mod7 → mod8 (sequential)
+- mod7 → mod9 (sequential)
+- mod7 → mod10 (sequential)
+- mod7 → mod11 (sequential)
+- mod7 → mod12 (sequential)
+- mod7 → mod13 (sequential)
+- mod7 → mod14 (sequential)
+- mod7 → mod15 (sequential)
+- mod8 → mod16 (sequential)
+- mod12 → mod16 (sequential)
+- mod9 → mod17 (sequential)
+- mod10 → mod18 (sequential)
+- mod15 → mod18 (sequential)
+- mod11 → mod19 (sequential)
+- mod13 → mod20 (sequential)
+- mod14 → mod20 (sequential)
+- mod15 → mod20 (sequential)
+
+## VISUAL STRATEGY
+Layout: 3 distinct sections arranged two-column layout: training lane on top / left, inference lane on bottom / right, shared backbone in center. Connectors: orthogonal arrows with solid triangle tips. FILL REQUIREMENTS: Each module box MUST have a colored background fill. Use these colors for different stages: #F97F5F, #FAA26F, #3C9BC9. NO module should have a plain white background - every box needs a tinted fill. Typography: Source Han Sans CN, main text 10pt, clear hierarchy between titles and labels. Visual style: architectural diagram with dashed boundaries for lanes, solid edges for forward flow. Visual enhancements: You MAY include small semantic icons next to module names (e.g., database icon for data input, gear icon for processing, chart icon for output). Use subtle shadows or gradients to give depth to module boxes. Consider rounded corners for a modern look.
+
+## SEMANTIC GRAPH CONTRACT
+Render these as a modular pipeline diagram:
+- Each module above appears as a clearly labeled box or region
+- Arrows show directional flow from input to intermediate stages to output
+- Variables, metrics, and hyperparameters appear as labels ON the arrows or at ports, NOT inside module boxes
+- Distinct line styles (solid/dashed) or color-coded edges show different data types
+- If the paper has training + inference stages, show both as complementary lanes
+
+## VISIBLE TEXT CONTRACT
+- Use short functional module names inside boxes
+- 1-2 word labels on key arrows
+- No paragraph text inside the diagram
+- Keep the diagram readable and compact
+
+## LAYOUT REQUIREMENTS
+- Horizontal left-to-right flow for pipeline diagrams; center-out for autoencoder style
+- Consistent spacing and alignment
+- White or very light background (for inclusion in paper)
+- Clean sans-serif labels
+
+## CANDIDATE EMPHASIS (this figure variant)
+双轨训练/推理 —— 两条平行通道共享一个核心模块
+
+
+Produce a clean, scholarly framework diagram now.
+
+[COLOR OVERRIDE — 必须使用以下配色]
+- 主色: #F97F5F, #FAA26F, #3C9BC9
+- 辅色: #FC757B, #FEE199, #B0D6A9
+- 强调色: #65BDBA, #FEE199
+- 背景: #FFF5F3
+- 忽略 prompt 中其他颜色指令，以上述为准

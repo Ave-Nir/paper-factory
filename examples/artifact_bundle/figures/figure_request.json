@@ -1,0 +1,367 @@
+{
+  "schema_version": "figure_request.v1",
+  "artifact_id": "2a91d2a4-766b-4cae-95d8-2440f620f9c6",
+  "run_id": "bd6510c9-5cc5-483a-96fb-27343946211b",
+  "producer": {
+    "service": "narrative",
+    "version": "2.0.0",
+    "code_revision": "unverified"
+  },
+  "created_at": "2026-07-20T06:29:08Z",
+  "content_sha256": "e53b2dffd9081ea9c8e8f817d56a95ab475bf069dfad20123946c3b9a65fd219",
+  "status": "completed",
+  "lineage": {
+    "parent_refs": [],
+    "source_run_ids": []
+  },
+  "payload": {
+    "dataset": "output_770_final_v2",
+    "generated_by": "assembler.v2.0.0",
+    "total_figures": 13,
+    "total_tables": 3,
+    "figure_requests": [
+      {
+        "figure_request_id": "972c6855-3551-4380-b050-d309887c74bc",
+        "figure_id": "图1",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "1 发文趋势与增长模型  如{FIG:教育不平等领域年度发文量趋势}所示，1992年至2026年间，教育不平等领域的文献计量学研究共发文770篇，整体呈波动上升态势",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "line",
+          "area"
+        ],
+        "placeholder_desc": "教育不平等领域年度发文量趋势",
+        "cited_in": [
+          "results.3.1"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "17577806-77c8-4d75-b907-8b93487b198d",
+        "figure_id": "图2",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "2 文献产出与核心来源  如{FIG:国家/地区发文量及占比（Top 15）}所示，教育不平等研究领域的学术产出在地理分布上呈现高度集中的单中心格局",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "line",
+          "area"
+        ],
+        "placeholder_desc": "国家/地区发文量及占比（Top 15）",
+        "cited_in": [
+          "results.3.2"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "3ec756e7-2242-4e10-b774-70d6934e1b8c",
+        "figure_id": "图3",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "4 研究主题、前沿与演化  如{FIG:关键词共现网络的时间演化}所示，该领域的知识结构经历了从分散走向凝聚的显著转变",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "network"
+        ],
+        "placeholder_desc": "关键词共现网络的时间演化",
+        "cited_in": [
+          "results.3.4"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "f6bdb315-08eb-4b31-a055-0aca728e9eeb",
+        "figure_id": "图4",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "5 知识基础与学术共同体  如{FIG:参考文献共被引网络与三大核心聚类}所示，教育不平等领域的知识基础由Breen（1997）、Boudon（1974）与Lucas（2001）构成的核心三角所锚定，三者在共被引网络中的总被引频次达310次",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "network"
+        ],
+        "placeholder_desc": "参考文献共被引网络与三大核心聚类",
+        "cited_in": [
+          "results.3.5"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "e49f8b52-ad33-4c5a-a260-14f034a33903",
+        "figure_id": "图5",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "如{FIG:年度国际合作率变化趋势}所示，教育不平等领域的国际合作呈长期稳定增长态势",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "network"
+        ],
+        "placeholder_desc": "年度国际合作率变化趋势",
+        "cited_in": [
+          "results.3.3"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "4fc43094-4e83-40ab-b629-60c23bdeef71",
+        "figure_id": "图6",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "在更宏观的层面，如{FIG:主题聚类战略坐标图}所示，关键词共现网络识别出三大主题子域",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "bar",
+          "table"
+        ],
+        "placeholder_desc": "主题聚类战略坐标图",
+        "cited_in": [
+          "results.3.4"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "8543242e-00c1-4db3-8aaf-df6ea4e4a777",
+        "figure_id": "图7",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "如{FIG:作者共被引网络与五大学术派系}所示，作者共被引分析进一步将领域内的学术共同体划分为五大派系",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "network"
+        ],
+        "placeholder_desc": "作者共被引网络与五大学术派系",
+        "cited_in": [
+          "results.3.5"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "8e49a51a-8ade-4f27-9bc8-13f968d7b669",
+        "figure_id": "图8",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "如{FIG:四种增长模型拟合曲线与实际观测值比较}所示，在备选的指数、Logistic、Gompertz和Bass四种增长模型中，Logistic模型展现了最优的拟合效果（R²=0",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "line",
+          "area"
+        ],
+        "placeholder_desc": "四种增长模型拟合曲线与实际观测值比较",
+        "cited_in": [
+          "results.3.1"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "d7d526af-70ad-4d8d-98a1-72f2688f37bf",
+        "figure_id": "图9",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "如{FIG:国家合作网络与社区检测}所示，国家合作版图呈现以美国、英国和德国为核心的“三极”结构，但这三大中心的辐射范围边界模糊",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "network"
+        ],
+        "placeholder_desc": "国家合作网络与社区检测",
+        "cited_in": [
+          "results.3.3"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "c66b4fee-0598-4b73-b8a2-0eb68d6afd66",
+        "figure_id": "表1",
+        "figure_type": "table",
+        "rq_id": "",
+        "intended_claim": "如{TBL:布拉德福德定律下的核心期刊分布}所示，期刊层面的产出分布同样遵循高度集中的规律",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "table"
+        ],
+        "placeholder_desc": "布拉德福德定律下的核心期刊分布",
+        "cited_in": [
+          "results.3.2"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "2d6d7e6d-eafb-4708-9e0e-ff4922ef57cb",
+        "figure_id": "图10",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "如{FIG:核心术语概念漂移轨迹}所示，主要关键词的时间偏移路径进一步揭示了主题结构的动态演化",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "bar",
+          "table"
+        ],
+        "placeholder_desc": "核心术语概念漂移轨迹",
+        "cited_in": [
+          "results.3.4"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "eb7ae2db-eb8d-4c91-b3bc-394fefcdc15f",
+        "figure_id": "图11",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "如{FIG:机构合作网络}所示，机构合作网络并未复制国家层面的多中心结构，而是呈现出以牛津大学和威斯康星大学为中心的双极格局（[待替换: SC标记#4]",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "network"
+        ],
+        "placeholder_desc": "机构合作网络",
+        "cited_in": [
+          "results.3.3"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "550d9581-2900-4daa-b2f3-5f51c602f9ba",
+        "figure_id": "图12",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "期刊共被引网络进一步揭示了支撑学术知识流通的结构性张力",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "network"
+        ],
+        "placeholder_desc": "期刊共被引网络与学科聚类",
+        "cited_in": [
+          "results.3.5"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "d445101a-1ae6-4250-8619-e81ba5bfe8d2",
+        "figure_id": "表2",
+        "figure_type": "table",
+        "rq_id": "",
+        "intended_claim": "如{TBL:突发关键词强度与时间窗口}所示，突发性检测识别出近期最活跃的研究前沿",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "table"
+        ],
+        "placeholder_desc": "突发关键词强度与时间窗口",
+        "cited_in": [
+          "results.3.4"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "4342c3c6-dd9d-43c5-be09-6f22027bd376",
+        "figure_id": "图13",
+        "figure_type": "figure",
+        "rq_id": "",
+        "intended_claim": "如{FIG:作者合作网络与社区着色}所示，作者合作网络呈现出小世界特性与极度碎片化并存的图景",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "network"
+        ],
+        "placeholder_desc": "作者合作网络与社区着色",
+        "cited_in": [
+          "results.3.3"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      },
+      {
+        "figure_request_id": "ba6a60a6-14ba-44e1-b775-c732245c2e8a",
+        "figure_id": "表3",
+        "figure_type": "table",
+        "rq_id": "",
+        "intended_claim": "如{TBL:作者生产力分布与洛特卡定律对比}所示，作者层面的生产力分布呈现出超越经典洛特卡定律预期的极端集中态势",
+        "evidence_refs": [],
+        "allowed_chart_families": [
+          "table"
+        ],
+        "placeholder_desc": "作者生产力分布与洛特卡定律对比",
+        "cited_in": [
+          "results.3.2"
+        ],
+        "occurrences": 1,
+        "visual_constraints": {
+          "color_blind_safe": true,
+          "grayscale_safe": true
+        },
+        "status": "planned"
+      }
+    ]
+  },
+  "extensions": {}
+}

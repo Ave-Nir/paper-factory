@@ -1,0 +1,40 @@
+# Venue 注册配置
+# 定义所有支持的会议/期刊及其对应的模板
+
+venues:
+  neurips2024:
+    template: "neurips2024.yaml"
+    description: "Neural Information Processing Systems 2024"
+    field: "cs_ml"
+    
+  icml2025:
+    template: "icml2025.yaml"
+    description: "International Conference on Machine Learning 2025"
+    field: "cs_ml"
+    
+  cvpr2024:
+    template: "cvpr2024.yaml"
+    description: "Computer Vision and Pattern Recognition 2024"
+    field: "cs_cv"
+    
+  acl2024:
+    template: "acl2024.yaml"
+    description: "Association for Computational Linguistics 2024"
+    field: "cs_nlp"
+    
+  ieee:
+    template: "ieee.yaml"
+    description: "IEEE Conference (generic)"
+    field: "cs_general"
+    
+  iclr2025:
+    template: "icml2025.yaml"  # 复用类似格式
+    description: "International Conference on Learning Representations 2025"
+    field: "cs_ml"
+    
+  aaai2025:
+    template: "ieee.yaml"
+    description: "AAAI Conference on Artificial Intelligence 2025"
+    field: "cs_ai"
+    overrides:
+      page_limit: 7

@@ -1,0 +1,84 @@
+# 领域配置
+# 定义不同领域的术语规范、章节命名约定和数学符号约定
+
+fields:
+  cs_ml:
+    name: "Machine Learning"
+    standard_sections:
+      method: "Method"
+      experiments: "Experiments"
+    terminology:
+      dataset: "dataset"
+      baseline: "baseline"
+      hyperparameter: "hyperparameter"
+    math_convention:
+      vector: "\\mathbf{x}"
+      matrix: "\\mathbf{X}"
+      set: "\\mathcal{X}"
+      loss: "\\mathcal{L}"
+      expectation: "\\mathbb{E}"
+      
+  cs_cv:
+    name: "Computer Vision"
+    standard_sections:
+      method: "Method" 
+      experiments: "Experiments"
+    terminology:
+      dataset: "dataset"
+      backbone: "backbone"
+      resolution: "resolution"
+    math_convention:
+      image: "\\mathbf{I}"
+      feature_map: "\\mathbf{F}"
+      convolution: "*"
+      
+  cs_nlp:
+    name: "Natural Language Processing"
+    standard_sections:
+      method: "Method"
+      experiments: "Experiments"
+    terminology:
+      dataset: "corpus"
+      token: "token"
+      embedding: "embedding"
+    math_convention:
+      token: "w"
+      sequence: "\\mathbf{w}"
+      embedding_matrix: "\\mathbf{E}"
+      attention: "\\text{Attention}"
+      
+  cs_ai:
+    name: "Artificial Intelligence"
+    standard_sections:
+      method: "Approach"
+      experiments: "Evaluation"
+    terminology:
+      agent: "agent"
+      environment: "environment"
+      reward: "reward"
+    math_convention:
+      state: "s"
+      action: "a"
+      policy: "\\pi"
+      value: "V"
+      
+  bio_informatics:
+    name: "Bioinformatics"
+    standard_sections:
+      method: "Methods"
+      experiments: "Results"
+    terminology:
+      dataset: "dataset"
+      gene: "gene"
+      sequence: "sequence"
+    math_convention:
+      sequence: "S"
+      alignment: "A"
+      
+  general:
+    name: "General"
+    standard_sections:
+      method: "Method"
+      experiments: "Experiments"
+    terminology: {}
+    math_convention: {}

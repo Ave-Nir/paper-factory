@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "total_errors": 2,
+    "auto_fixable": 1,
+    "manual_required": 1,
+    "estimated_total_time_sec": 1.0
+  },
+  "attributions": [
+    {
+      "error_code": "DUPLICATE_REF_HEADING",
+      "root_causes": [
+        {
+          "cause": "模板自动添加参考文献标题 + 原文已有标题",
+          "category": "template",
+          "confidence": 0.95,
+          "explanation": "LaTeX 模板（如 ctexart 的 \\thebibliography 环境）会自动生成参考文献标题，如果原文中也包含该标题，会导致重复。"
+        }
+      ],
+      "suggestions": [
+        {
+          "action": "删除原文中重复的参考文献标题",
+          "automated": true,
+          "success_rate": 0.95,
+          "estimated_time_sec": 1.0,
+          "description": "在 .tex 中删除多余的 \\section*{参考文献} 或 \\chapter*{参考文献}，保留模板自动生成的标题。",
+          "code_example": "删除前: \\section*{参考文献} ... \\end{thebibliography}\n删除后: ... \\end{thebibliography}"
+        }
+      ],
+      "historical_success_rate": 0.0,
+      "estimated_fix_time_sec": 1.0,
+      "auto_fixable": true
+    },
+    {
+      "error_code": "LINE_SPACING_INCONSISTENT",
+      "root_causes": [],
+      "suggestions": [],
+      "historical_success_rate": 0.0,
+      "estimated_fix_time_sec": 0.0,
+      "auto_fixable": false
+    }
+  ]
+}
