@@ -1,6 +1,6 @@
 <div align="center">
 
-![Paper Factory](docs/images/cover.png)
+![Paper Factory](docs/images/cover.jpg)
 
 # Paper Factory
 
