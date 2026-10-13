@@ -1,0 +1,17 @@
+# 行尾统一为 LF：跨平台 clone 不产生整文件差异
+# 注：本文件会覆盖 core.autocrlf，属性优先于全局配置
+* text=auto eol=lf
+
+# 二进制资源：禁止行尾转换与文本 diff
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.pdf  binary
+*.docx binary
+*.zip  binary
+
+# 学术模板与参考文献样式：一律按文本处理，保持 LF
+*.tex  text eol=lf
+*.bst  text eol=lf
+*.yaml text eol=lf
+*.yml  text eol=lf
